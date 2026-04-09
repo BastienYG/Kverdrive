@@ -9,8 +9,18 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
 
+        p{
+        font-size: 1rem;
+        color: #5a8088;
+        line-height: 1.6;
+        text-align: center;
+    }
+        .Gras {
+        font-weight: bold;
+        color: #2e7a85;
+    }
+}
 header {
     display: flex;
     align-items: center;
@@ -21,40 +31,19 @@ header {
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 16px rgba(70,154,165,0.07);
-}
-
-header.header-center {
     flex-direction: column;
     justify-content: center;
     gap: 12px;
+
+        .logo-link { 
+        justify-content: center;
+
+            div {
+            text-align: center;
+        }
+    }
 }
-
-
-.logo-link { 
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-}
-
-.logo-link div {
-    text-align: center;
-}
-
-.logo-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    color: #2e7a85;
-    text-transform: uppercase;
-}
-
-.logo-text span {
-    color: #c8963e;
-    margin: 0 4px;
-}
-
-.btn-contact {
+.bouton-de-page {
     font-family: 'Jost', sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
@@ -68,42 +57,38 @@ header.header-center {
     transition: background 0.2s, transform 0.15s;
     border: none;
     cursor: pointer;
+    &:hover {
+        background: #2e7a85;
+        transform: translateY(-1px);
+    }
 }
-
-.btn-contact:hover {
-    background: #2e7a85;
-    transform: translateY(-1px);
-}
-
-
-
 main {
     flex: 1;
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
     padding: 0 24px 60px;
-}
 
+        .Titre {
+        text-align: center;
+        padding: 64px 0 40px;
 
+                h1 {
+                font-family: 'Cormorant Garamond', serif;
+                font-size: clamp(2.4rem, 5vw, 3.8rem);
+                font-weight: 300;
+                line-height: 1.15;
+                color: #1a3a3f;
+                margin-bottom: 12px;
+            }
 
-.Titre {
-    text-align: center;
-    padding: 64px 0 40px;
-    h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.4rem, 5vw, 3.8rem);
-    font-weight: 300;
-    line-height: 1.15;
-    color: #1a3a3f;
-    margin-bottom: 12px;
+                .Titre-Desc {
+                color: #5a8088;
+                margin-top: 8px;
+            }
     }
-    .Titre-Desc {
-        color: #5a8088;
-        margin-top: 8px;
-    }
-}
 
+}
 
 
 
@@ -136,12 +121,7 @@ main {
 }
 
 
-p{
-    font-size: 1rem;
-    color: #5a8088;
-    line-height: 1.6;
-    text-align: center;
-}
+
 
 
 .section { display: none; }
@@ -358,10 +338,7 @@ textarea {
     transform: translateY(-1px);
 }
 
-.Gras {
-    font-weight: bold;
-    color: #2e7a85;
-}
+
 
 
 
@@ -375,26 +352,23 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+        
+        .footer-copyright {
+        margin: 0;
+        color: rgba(255,255,255,0.5);
+        font-size: 0.75rem;
+    }
+        .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        align-items: center;
+        font-size: 0.75rem;
+        padding: 8px 16px;
+    }
 }
 
-.footer-copyright {
-    margin: 0;
-    color: rgba(255,255,255,0.5);
-    font-size: 0.75rem;
-}
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    align-items: center;
-}
-
-.footer-links .btn-contact {
-    font-size: 0.75rem;
-    padding: 8px 16px;
-}
 
 
  .carousel {
