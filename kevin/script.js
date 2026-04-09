@@ -1,7 +1,19 @@
+const flickityInstances = [];
+
+function resizeAllCarousels() {
+    flickityInstances.forEach(inst => {
+        if (typeof inst.resize === 'function') {
+            inst.resize();
+        }
+    });
+}
+
 function showSection(id) {
     document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
     const target = document.getElementById(id);
     if (target) target.classList.add('active');
+    resizeAllCarousels();
+    setTimeout(resizeAllCarousels, 50);
 }
 
 function setActiveNav(el) {
@@ -15,6 +27,8 @@ function showSubSection(id, btn) {
     const target = document.getElementById(id);
     if (target) target.classList.add('active');
     if (btn) btn.classList.add('active');
+    resizeAllCarousels();
+    setTimeout(resizeAllCarousels, 50);
 }
 
 showSection('Navettes');
@@ -23,6 +37,24 @@ window.onload = function() {
     if (typeof emailjs !== 'undefined') {
         emailjs.init("gq1BmcieISE4bGWHT");
         console.log("EmailJS initialized successfully.");
+    }
+
+    if (typeof Flickity !== 'undefined') {
+        const flickityOptions = {
+            cellAlign: 'center',
+            contain: true,
+            groupCells: false,
+            freeScroll: false,
+            wrapAround: false,
+            prevNextButtons: true,
+            pageDots: true,
+            adaptiveHeight: true
+        };
+        document.querySelectorAll('.carousel').forEach(el => {
+            const flkty = new Flickity(el, flickityOptions);
+            flickityInstances.push(flkty);
+        });
+        window.addEventListener('resize', resizeAllCarousels);
     }
 
     const form = document.querySelector("form");

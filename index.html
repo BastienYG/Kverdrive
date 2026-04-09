@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kverdrive</title>
     <link rel="stylesheet" href="kevin/style.css">
+    <link rel="stylesheet" href="kevin/flickity.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -55,7 +56,11 @@ Commencez et terminez votre voyage dans les meilleures conditions.</p>
             </div>
 
             <div id="Gares" class="sub-section active">
-              <img src="kevin/img/tgvfr.jpeg" width="25%">
+                <div class="carousel">
+                    <div class="carousel-cell">
+                        <img src="kevin/img/tgvfr.jpeg" alt="TGV" width="200px" height="150px">
+                    </div>
+                </div>
                 <div class="cards-grid">
                     <div class="card">
                         <h3>Massy TGV</h3>
@@ -73,7 +78,11 @@ Commencez et terminez votre voyage dans les meilleures conditions.</p>
             </div>
 
             <div id="Aeroports" class="sub-section">
-              <img src="kevin/img/avion.jpg" width="25%">
+              <div class="carousel">
+                    <div class="carousel-cell">
+                        <img src="kevin/img/avion.jpg" alt="Avion" width="200px" height="150px">
+                    </div>
+                </div>
                 <div class="cards-grid">
                     <div class="card">
                         <h3>Orly </h3>
@@ -91,6 +100,10 @@ Commencez et terminez votre voyage dans les meilleures conditions.</p>
             </div>
 
         <!--     <div id="Caves" class="sub-section">
+                    <div class="carousel">
+                        <div class="carousel-cell">
+                            <img src="kevin/img/" alt="" width="200px" height="150px   ">
+                        </div>
                 <div class="cards-grid">
                     <div class="card">
                     <h3> Caves 1 </h3>
@@ -118,11 +131,13 @@ Commencez et terminez votre voyage dans les meilleures conditions.</p>
         <section id="Mariages" class="section">
             <h2 class="section-title">Mariages</h2>
             <p class="section-intro"> Faites de votre mariage un moment inoubliable dès le premier trajet.
-
-Nous vous proposons un service VTC dédié aux mariages, alliant confort, élégance et ponctualité. Que ce soit pour conduire la mariée ou le couple, nous mettons tout en œuvre pour vous offrir une prestation à la hauteur de cet événement unique.
-
-Notre priorité : vous offrir sérénité et prestige pour que vous puissiez profiter pleinement de cette journée exceptionnelle.</p>
-<img src="kevin/img/304.jpeg" width="20%"> <img src="kevin/img/lexus es.jpeg" width="30%">
+                Nous vous proposons un service VTC dédié aux mariages, alliant confort, élégance et ponctualité. Que ce soit pour conduire la mariée ou le couple, nous mettons tout en œuvre pour vous offrir une prestation à la hauteur de cet événement unique.
+                Notre priorité : vous offrir sérénité et prestige pour que vous puissiez profiter pleinement de cette journée exceptionnelle.</p>
+                <div class="carousel">
+                    <div class="carousel-cell">
+                        <img src="kevin/img/304.jpeg" alt="Voiture" width="150  px" height="200px">
+                    </div>
+                </div>
             <div class="cards-grid">
                 <div class="card">
                     <h3>Forfait 1 <br>
@@ -179,6 +194,7 @@ Notre priorité : vous offrir sérénité et prestige pour que vous puissiez pro
     </footer>
 
 
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="kevin/script.js"></script>
 </body>
 </html>
