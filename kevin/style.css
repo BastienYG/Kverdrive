@@ -358,6 +358,12 @@ textarea {
     transform: translateY(-1px);
 }
 
+.Gras {
+    font-weight: bold;
+    color: #2e7a85;
+}
+
+
 
 footer {
     background: #1a3a3f;
@@ -368,25 +374,30 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 16px;
+}
+
+.footer-copyright {
+    margin: 0;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.75rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 12px;
-    
+    align-items: center;
+}
+
+.footer-links .btn-contact {
+    font-size: 0.75rem;
+    padding: 8px 16px;
 }
 
 
- 
-
-
-
-@media (max-width: 600px) {
-    header { padding: 14px 20px; }
-    .logo-text { font-size: 1.1rem; }
-    .form-row { grid-template-columns: 1fr; }
-    form { padding: 24px 18px; }
-    h1 { font-size: 2rem; }
-}
-
-/* Carousel styles */
-.carousel {
+ .carousel {
     margin: 20px auto 40px auto;
     width: 100%;
     max-width: 760px;
@@ -407,3 +418,14 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+
+
+@media (max-width: 600px) {
+    header { padding: 14px 20px; }
+    .logo-text { font-size: 1.1rem; }
+    .form-row { grid-template-columns: 1fr; }
+    form { padding: 24px 18px; }
+    h1 { font-size: 2rem; }
+}
+
