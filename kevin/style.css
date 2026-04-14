@@ -1,6 +1,8 @@
-
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: 'Jost', sans-serif;
@@ -9,22 +11,24 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
-        p{
-        font-size: 1rem;
-        color: #5a8088;
-        line-height: 1.6;
-        text-align: center;
-    }
-        .Gras {
-        font-weight: bold;
-        color: #2e7a85;
-    }
 }
+
+body p {
+    font-size: 1rem;
+    color: #5a8088;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.Gras {
+    font-weight: bold;
+    color: #2e7a85;
+}
+
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 18px 48px;
     background: #ffffff;
     border-bottom: 2px solid #d4eef1;
@@ -32,17 +36,17 @@ header {
     z-index: 100;
     box-shadow: 0 2px 16px rgba(70,154,165,0.07);
     flex-direction: column;
-    justify-content: center;
     gap: 12px;
-
-        .logo-link { 
-        justify-content: center;
-
-            div {
-            text-align: center;
-        }
-    }
 }
+
+header .logo-link {
+    justify-content: center;
+}
+
+header .logo-link div {
+    text-align: center;
+}
+
 .bouton-de-page {
     font-family: 'Jost', sans-serif;
     font-size: 0.8rem;
@@ -57,40 +61,39 @@ header {
     transition: background 0.2s, transform 0.15s;
     border: none;
     cursor: pointer;
-    &:hover {
-        background: #2e7a85;
-        transform: translateY(-1px);
-    }
 }
+
+.bouton-de-page:hover {
+    background: #2e7a85;
+    transform: translateY(-1px);
+}
+
 main {
     flex: 1;
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
     padding: 0 24px 60px;
-
-        .Titre {
-        text-align: center;
-        padding: 64px 0 40px;
-
-                h1 {
-                font-family: 'Cormorant Garamond', serif;
-                font-size: clamp(2.4rem, 5vw, 3.8rem);
-                font-weight: 300;
-                line-height: 1.15;
-                color: #1a3a3f;
-                margin-bottom: 12px;
-            }
-
-                .Titre-Desc {
-                color: #5a8088;
-                margin-top: 8px;
-            }
-    }
-
 }
 
+main .Titre {
+    text-align: center;
+    padding: 64px 0 40px;
+}
 
+main .Titre h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-weight: 300;
+    line-height: 1.15;
+    color: #1a3a3f;
+    margin-bottom: 12px;
+}
+
+main .Titre .Titre-Desc {
+    color: #5a8088;
+    margin-top: 8px;
+}
 
 .main-nav {
     display: flex;
@@ -120,21 +123,20 @@ main {
     color: #ffffff;
 }
 
+.section {
+    display: none;
+}
 
-
-
-
-.section { display: none; }
-.section.active { 
+.section.active {
     display: block;
-    img{
-        display: block;
-        max-width: 100%;
-        height: auto;
-        border-radius: 6px;
-        margin: 16px auto 0;
-        margin-bottom: 20px;
-    }
+}
+
+.section.active img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 16px auto 20px;
 }
 
 .section-title {
@@ -155,10 +157,6 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
-
 
 .sub-nav {
     display: flex;
@@ -190,14 +188,13 @@ main {
     font-weight: 500;
 }
 
+.sub-section {
+    display: none;
+}
 
-
-
-.sub-section { display: none; }
-.sub-section.active { display: block; }
-
-
-
+.sub-section.active {
+    display: block;
+}
 
 .cards-grid {
     display: grid;
@@ -221,7 +218,9 @@ main {
 .card::before {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 3px;
     opacity: 0;
     transition: opacity 0.2s;
@@ -232,7 +231,9 @@ main {
     transform: translateY(-3px);
 }
 
-.card:hover::before { opacity: 1; }
+.card:hover::before {
+    opacity: 1;
+}
 
 .card-icon {
     font-size: 2rem;
@@ -252,9 +253,6 @@ main {
     color: #5a8088;
     line-height: 1.6;
 }
-
-
-
 
 .contact-section {
     max-width: 640px;
@@ -291,7 +289,9 @@ label {
     margin-bottom: 6px;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     font-family: 'Jost', sans-serif;
     font-size: 0.95rem;
     color: #1a3a3f;
@@ -301,11 +301,13 @@ input, textarea, select {
     padding: 12px 14px;
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
-
-
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
     border-color: #469AA5;
     box-shadow: 0 0 0 3px rgba(70,154,165,0.12);
     background-color: #ffffff;
@@ -338,10 +340,6 @@ textarea {
     transform: translateY(-1px);
 }
 
-
-
-
-
 footer {
     background: #1a3a3f;
     color: rgba(255,255,255,0.6);
@@ -352,26 +350,25 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 16px;
-        
-        .footer-copyright {
-        margin: 0;
-        color: rgba(255,255,255,0.5);
-        font-size: 0.75rem;
-    }
-        .footer-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-        align-items: center;
-        font-size: 0.75rem;
-        padding: 8px 16px;
-    }
 }
 
+.footer-copyright {
+    margin: 0;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.75rem;
+}
 
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    font-size: 0.75rem;
+    padding: 8px 16px;
+}
 
- .carousel {
+.carousel {
     margin: 20px auto 40px auto;
     width: 100%;
     max-width: 760px;
@@ -393,8 +390,6 @@ footer {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-
-
 @media (max-width: 600px) {
     header { padding: 14px 20px; }
     .logo-text { font-size: 1.1rem; }
@@ -402,4 +397,3 @@ footer {
     form { padding: 24px 18px; }
     h1 { font-size: 2rem; }
 }
-
