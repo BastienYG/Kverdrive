@@ -47,6 +47,11 @@ header .logo-link div {
     text-align: center;
 }
 
+header .logo-link img {
+    height: 200px;
+    width: auto;
+}
+
 .bouton-de-page {
     font-family: 'Jost', sans-serif;
     font-size: 0.8rem;
@@ -134,7 +139,8 @@ main .Titre .Titre-Desc {
 .section.active img {
     display: block;
     max-width: 100%;
-    height: auto;
+    width: auto;
+    height: 200px;
     border-radius: 6px;
     margin: 16px auto 20px;
 }
@@ -343,7 +349,7 @@ textarea {
     transform: translateY(-1px);
 }
 
-.info-legal {
+.info-terms {
     background: #ffffff;
     border: 1px solid #c8e4e8;
     border-radius: 6px;
@@ -351,7 +357,7 @@ textarea {
     margin-bottom: 20px;
     box-shadow: 0 4px 12px rgba(70,154,165,0.07);
 }
-.info-legal h2 {
+.info-terms h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
     font-weight: 400;
@@ -359,7 +365,7 @@ textarea {
     margin-bottom: 12px;
     text-align: center;
 }
-.info-legal h3 {
+.info-terms h3 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.2rem;
     font-weight: 400;
@@ -367,7 +373,7 @@ textarea {
     margin-bottom: 8px;
     text-align: center;
 }
-.info-legal li {
+.info-terms li {
     font-size: 0.95rem;
     color: #5a8088;
     line-height: 1.6;
@@ -387,6 +393,12 @@ footer {
     align-items: center;
     gap: 16px;
 }
+
+footer .logo-link img {
+    height: 200px;
+    width: auto;
+}
+
 
 .footer-copyright {
     margin: 0;
@@ -422,8 +434,8 @@ footer {
 
 .carousel-cell img {
     display: block;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: auto;
+    height: 150px;
 }
 
 @media (max-width: 600px) {

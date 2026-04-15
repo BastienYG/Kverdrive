@@ -20,8 +20,8 @@
       "name": "Kverdrive",
       "description": "Service VTC haut de gamme à Montargis. Transferts aéroports, gares TGV et transport mariage.",
       "url": "https://www.kverdrive.fr",
-      "logo": "https://www.kverdrive.fr/kevin/img/v2.png",
-      "telephone": "+33",
+      "logo": "https://www.kverdrive.fr/kevin/img/logo_Kverdrive.png",
+      "telephone": "+33650385852",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Montargis",
@@ -35,8 +35,8 @@
     </script>
 
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="kevin/style.css">
-    <link rel="stylesheet" href="kevin/flickity.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flickity.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -44,9 +44,9 @@
 
     <header>
         <a href="index.html" class="logo-link" title="Kverdrive - Chauffeur VTC Montargis - Accueil">
-            <div>  <img src="kevin/img/logo_Kverdrive.png" > </div>
+            <div>  <img src="img/logo_Kverdrive.png" > </div>
         </a>
-        <a href="kevin/contact.html" class="bouton-de-page" title="Contact Kverdrive - Réservation VTC">Contact</a>
+        <a href="contact.html" class="bouton-de-page" title="Contact Kverdrive - Réservation VTC">Contact</a>
     </header>
 
     <main>
@@ -79,18 +79,27 @@
         Que ce soit pour un départ ou un retour, nous vous garantissons un transport confortable, sans stress, avec prise en charge personnalisée.
 
 Commencez et terminez votre voyage dans les meilleures conditions.</p>
-<img src="kevin/img/lexus-es.jpeg" alt="Lexus ES - Voiture de luxe pour transferts aéroport Kverdrive">
+<img src="img/lexus-es.jpeg" alt="Lexus ES - Voiture de luxe pour transferts aéroport Kverdrive">
+
+            <nav class="sub-nav">
+                <a class="sub-btn active" onclick="showSubSection('Gares', this); return false;" title="Services de navettes gares TGV Kverdrive">
+                    <h3>Gares</h3>
+                </a>
+                <a class="sub-btn" onclick="showSubSection('Aeroports', this); return false;" title="Services de transferts aéroports Kverdrive">
+                    <h3>Aéroports</h3>
+                </a>
+            </nav>
 
             <div id="Gares" class="sub-section active">
                 <div class="carousel">
                     <div class="carousel-cell">
-                        <img src="kevin/img/tgvfr.jpeg" alt="Gare TGV française - Service de navette VTC Kverdrive">
+                        <img src="img/tgvfr.jpeg" alt="Gare TGV française - Service de navette VTC Kverdrive">
                     </div>
                     <div class="carousel-cell">
-                        <img src="kevin/img/massy_tgv.jpeg" alt="Gare TGV de Massy - Transfert VTC depuis Montargis">
+                        <img src="img/massy_tgv.jpeg" alt="Gare TGV de Massy - Transfert VTC depuis Montargis">
                     </div>
                     <div class="carousel-cell">
-                        <img src="kevin/img/marne_la_vallee.jpg" alt="Gare de Marne-la-Vallée - Navette chauffeur privé Kverdrive" >
+                        <img src="img/marne_la_vallee.jpg" alt="Gare de Marne-la-Vallée - Navette chauffeur privé Kverdrive" >
                     </div>
                 </div>
                 <div class="cards-grid">
@@ -112,7 +121,7 @@ Commencez et terminez votre voyage dans les meilleures conditions.</p>
             <div id="Aeroports" class="sub-section">
               <div class="carousel">
                     <div class="carousel-cell">
-                        <img src="kevin/img/avion.jpg" alt="Aéroport - Service de transfert VTC Kverdrive vers Orly et Roissy">
+                        <img src="img/avion.jpg" alt="Aéroport - Service de transfert VTC Kverdrive vers Orly et Roissy">
                     </div>
                 </div>
                 <div class="cards-grid">
@@ -167,7 +176,7 @@ Commencez et terminez votre voyage dans les meilleures conditions.</p>
                 Notre priorité : vous offrir sérénité et prestige pour que vous puissiez profiter pleinement de cette journée exceptionnelle.</p>
                 <div class="carousel">
                     <div class="carousel-cell">
-                        <img src="kevin/img/304.jpeg" alt="Citroën DS 1970 - Voiture de mariage Kverdrive Montargis">
+                        <img src="img/304.jpeg" alt="Citroën DS 1970 - Voiture de mariage Kverdrive Montargis">
                     </div>
                 </div>
             <div class="cards-grid">
@@ -217,18 +226,18 @@ Commencez et terminez votre voyage dans les meilleures conditions.</p>
 
     <footer>
         <a href="index.html" class="logo-link" title="Kverdrive - Chauffeur VTC Montargis - Accueil">
-            <div><img src="kevin/img/logo_Kverdrive.png"></div>
+            <div><img src="img/logo_Kverdrive.png"></div>
         </a>
         <p class="footer-copyright">&copy; 2026 Kverdrive – Chauffeur VTC Montargis. Tous droits réservés.</p>
         <div class="footer-links">
-            <a href="kevin/confidentialite.html" class="bouton-de-page" title="Politique de confidentialité Kverdrive">Confidentialité</a>
-            <a href="kevin/mentions-legales.html" class="bouton-de-page" title="Mentions légales Kverdrive">Mentions légales</a>
-            <a href="kevin/contact.html" class="bouton-de-page" title="Contact Kverdrive">Contact</a>
+            <a href="confidentialite.html" class="bouton-de-page" title="Politique de confidentialité Kverdrive">Confidentialité</a>
+            <a href="mentions-legales.html" class="bouton-de-page" title="Mentions légales Kverdrive">Mentions légales</a>
+            <a href="contact.html" class="bouton-de-page" title="Contact Kverdrive">Contact</a>
         </div>
     </footer>
 
 
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="kevin/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
